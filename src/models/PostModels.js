@@ -27,12 +27,11 @@ const Posts = new mongoose.Schema(
         ref: "users",
       },
     ],
-    comments: [
-      {
-        type: Array,
-        ref: "comments",
-      },
-    ],
+    commentsCount: {
+      type: Number,
+      default: 0,
+      ref: "comments",
+    },
   },
   { timestamps: true }
 );
