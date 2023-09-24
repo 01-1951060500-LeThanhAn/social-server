@@ -7,6 +7,7 @@ import {
   getAllUser,
   getInfoUser,
   searchUser,
+  unfollowUser,
   updateProfile,
 } from "../controller/UserController.js";
 
@@ -67,7 +68,7 @@ router.put("/:id/follow", followUser);
 
 //unfollow a user
 
-router.put("/:id/unfollow", followUser);
+router.put("/:id/unfollow", unfollowUser);
 
 //search user
 
