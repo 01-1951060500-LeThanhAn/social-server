@@ -63,7 +63,7 @@ router.get("/followers/:userId", getAllFollowers);
 
 //follow a user
 
-router.put("/:id/follow", async (req, res) => {});
+router.put("/:id/follow", followUser);
 
 //unfollow a user
 
